@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row game-card align-items-center">
+            <div class="col col-md-6 offset-md-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <p class="m-0">Окно результатов генерации</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <p class="t-left">Фамилия: <span id="surnameOutput">Фамилия</span></p>
+                                <p class="t-left">Имя: <span id="firstNameOutput">Имя</span></p>
+                                <p class="t-left">Отчество: <span id="patronymic">Отчество</span></p>
+                                <p class="t-left">Профессия: <span id="profession">Профессия</span></p>
+                                <p class="t-left">Пол: <span id="genderOutput">Пол</span></p>
+                                <p class="t-left">Дата рождения: <span id="birthYearOutput">Год рождения</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-info" id="clear">Очистить</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-success" id="generate">Сгенерировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="personGenerator.js"></script>
+    <script src="init.js"></script>
+</body>
+
+</html>
